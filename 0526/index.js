@@ -1,5 +1,3 @@
-
-
 function power(n1, n2){
     if(n2 === 0){
         return 1;
@@ -7,7 +5,6 @@ function power(n1, n2){
     return n1 * power(n1, n2-1);
 }
 console.log(power(2, 2));
-
 
 function productOfArray(arr) {
     if (arr.length === 0) {
@@ -21,25 +18,20 @@ function productOfArray(arr) {
 
 function recursiveRange(n){
     if(n === 0){
-       return;
+       return 0;
     }
     return n + recursiveRange(n - 1);
 }
+console.log(recursiveRange(6));
 
-​console.log(recursiveRange(6));
 
-
-function reverse(word){
-    const rev = '';
-    if(word.reverse() === rev){
-        return;
+function reverse(str) {
+    if(!str){
+        return str;
     }
-    return rev = reverse(word[word.length - 1]++);
-    
-}
-
-console.log(reverse('hello'));
-
+    return reverse(str.substr(1)) + str[0];
+     };
+    console.log(reverse('hello!'))
 
 function isPalindromes(str){
     if(str.length < 2){
