@@ -13,7 +13,7 @@ function productOfArray(arr) {
     let n = arr.pop();
     return n * productOfArray(arr);
   }
-  console.log(productOfArray([1, 2, 3]));
+console.log(productOfArray([1, 2, 3]));
 
 
 function recursiveRange(n){
@@ -27,10 +27,10 @@ console.log(recursiveRange(6));
 
 function reverse(str) {
     if(!str){
-        return str;
+    return str;
     }
     return reverse(str.substr(1)) + str[0];
-     };
+     }
     console.log(reverse('hello!'))
 
 function isPalindromes(str){
