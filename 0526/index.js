@@ -43,7 +43,7 @@ function isPalindromes(str){
 
     if(firstWord === lastWord){
     let rev = str.substr(1).slice(0, -1);
-    console.log(rev);
+  
     return isPalindromes(rev);  
     }
     else{
